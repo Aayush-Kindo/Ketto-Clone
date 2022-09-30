@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/63b2421d68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <style>
         #nav-bar{
             width:100%;
@@ -162,21 +164,24 @@
         }
         #star{
             width: 100%;
-            height: 720px;
+            height: 780px;
             border: 1px solid red;
             background-color: #fff;
         }
         #star h2{
             text-align: center;
             margin-top: 10%;
+            font-weight: bolder;
         }
         .content{
             margin:auto;
-            width:80%;
-            height:450px;
+            width:90%;
+            height:480px;
             border: 1px solid red;
             margin-top: 40px;
             display: flex;
+            font-family: sans-serif;
+            color: #444444;
             
             
         }
@@ -188,13 +193,193 @@
         .content>div{
             border:1px solid green;
             width:30%;
-            height:450px;
+            height:480px;
             margin: auto;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
             
         }
-       
-       
+       .publish img{
+        width:20%;
+        clip-path: circle();
+       }
+       .publish{
+        display:flex;
+        margin-bottom: 10px;
+       }
+       .mny{
+        color: black;
+        font-weight: bolder;
+        
+    
+       }
+       .progress-bar{
+        width: 10%;
+        background-color: turquoise;
 
+       }
+       .icn{
+        display: flex;
+        justify-content: space-between;
+       }
+       .fa-heart{
+        color: red;
+       }
+       .fund-btn{
+        display: flex;
+        justify-content: space-between;
+       }
+       .fund-btn button{
+        width: 40%;
+        margin: none;
+        border-radius: 10px;
+       }
+       .fa-square-facebook{
+        color: navy;
+       }
+       .fbb{
+       
+        border: 1px solid blue;
+        font-family: sans-serif;
+        color: navy;
+        font-weight: bolder;
+       }
+       .fbb+button{
+        background-color:turquoise;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight:bolder;
+        border:none;
+       }
+
+       .phone{
+        width:80%;
+        height:650px;
+        border:1px solid indigo;
+        
+        margin: auto;
+        
+        
+       
+       }
+       .phone h2{
+        text-align: center;
+        font-weight: bolder;
+       }
+       .phone>div>img{
+       height: 350px;
+       }
+       .phne-cnt{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        height:480px;
+        border:1px solid red;
+        margin: auto;
+       }
+       video{
+        height:450px;
+       }
+       .omg{
+        height: 450px;
+        width:30%;
+        border:1px solid orange;
+        
+       }
+       .omg>div{
+        width:100%;
+        height:35%;
+        border:1px solid green;
+        
+       }
+       .omg h4{
+        color: teal;
+        font-weight: bolder;
+       }
+       .shr-btn{
+        border:1px solid yellowgreen;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        text-align: center;
+        margin-left: 30%;
+        margin-bottom: 20px;
+       }
+       .shr-btn>button{
+        background-color:turquoise;
+        color: #fff;
+        border-radius: 8px;
+        border:none;
+        height:50px;
+        padding: 5px;
+       }
+       .shr-btn>button+button{
+        width:50%;
+        color: turquoise;
+        background-color: #fff;
+        border: 2px solid turquoise;
+       }
+       .lst{
+        text-align: center;
+       }
+       .lst-btn{
+        display: inline;
+        
+       }
+       .wt{
+        background-color: green;
+        color: #fff;
+       }
+       .wt-btn{
+        border:1px solid white;
+        border-radius: 10px;
+        width: 14%;
+       }
+       .wt-btn+button{
+        color: navy;
+        background-color: #fff;
+        border-radius: 10px;
+       
+       }
+       .serv{
+        height:450px;
+        width:100%;
+        border:1px solid black;
+        margin-top:80px;
+        text-align: center;
+        font-weight: bolder;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+       }
+       .serv h4{
+        font-weight: bolder;
+       }
+       .serv p{
+        width: 40%;
+        margin-left: 30%;
+        font-weight: lighter;
+        margin-bottom: 40px;
+       }
+       .serv-cont{
+        border:1px solid royalblue;
+        width:100%;
+        height:250px;
+        display: flex;
+       }
+       .serv-cont>div{
+         width:16%;
+         height:50%;
+         border:2px solid turquoise;
+         padding: 10px;
+         margin: auto;
+         background-color: turquoise;
+       }
+       .serv-cont svg {
+        height:60%;
+       }
+       .serv-cont img {
+        height:60%;
+       }
        
     </style>
     <title>Document</title>
@@ -268,9 +453,153 @@
         <h2>Trending Fundraisers</h2>
         <div class="sub-txt">View the fundraisers that are most active right now</div>
         <div class="content">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <img src="https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=320&dpr=1.5">
+                <h3>My Little Boy’s Cancer Has Relapsed Twice But I’m Helpless. Please Save..</h3>
+                <div class="publish">
+                  <img src="https://www.forbesindia.com/media/wpower_2021/Pratima-Joshi.jpg">
+                  <span>By Family Friends</span>
+                </div>
+                <div><span class="mny">₹4,22,16,292</span> raised out of ₹5,00,00,000</div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      
+                    </div>
+                  </div>
+                  <div class="icn">
+                    <div> <i class="fa-solid fa-clock"></i>19 days Left</div>
+                    <div> <i class="fa-solid fa-heart"></i>22092 Supporters</div>
+                  </div>
+                  <div class="fund-btn">
+                      <button class="fbb"><i class="fa-brands fa-square-facebook"></i>share</button>
+                      <button>Donate</button>
+                  </div>
+                 
+            </div>
+            <div>
+                <img src="https://kettocdn.gumlet.io/media/campaign/281000/281759/image/wid60211afcc8a19.png?w=320&dpr=1.5">
+                <h3>Offer A Helping Hand To Support  Rubina Rodgers'  Treatment..</h3>
+                <div class="publish">
+                    <img src="https://cdn.pixabay.com/photo/2021/08/30/11/43/old-man-6585645_1280.jpg">
+                    <span>By Sabapathy J</span> 
+                </div>
+                <div><span class="mny">₹ 78,72,811 </span>raised of ₹ 95,00,000 </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                      
+                    </div>
+                  </div>
+                  <div class="icn">
+                    <div> <i class="fa-solid fa-clock"></i>12 days Left</div>
+                    <div> <i class="fa-solid fa-heart"></i>2813 Supporters</div>
+                  </div>
+                  <div class="fund-btn">
+                    <button class="fbb"><i class="fa-brands fa-square-facebook"></i>share</button>
+                    <button>Donate</button>
+                </div>
+                    
+            </div>
+            <div>
+                <img src="https://kettocdn.gumlet.io/media/campaign/686000/686992/image/wid6315de97732b3.jpg?w=320&dpr=1.5">
+                <h3>My Young 30 Year Old Husband Is In Urgent Need Of Heart Transplant..</h3>
+                <div class="publish">
+                   <img src="https://kettocdn.gumlet.io/media/campaign/686000/686992/image/wid6315de97732b3.jpg?w=320&dpr=1.5">
+                   <span>By Karishma Kushwaha</span>      
+                </div>
+                <div><span class="mny">₹ 12,02,250</span>raised of ₹ 30,30,000 goal</div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                    aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                      
+                    </div>
+                  </div>
+                  <div class="icn">
+                    <div> <i class="fa-solid fa-clock"></i>20 days Left</div>
+                    <div> <i class="fa-solid fa-heart"></i>306 Supporters</div>
+                  </div>
+                  <div class="fund-btn">
+                    <button class="fbb"><i class="fa-brands fa-square-facebook"></i>share</button>
+                    <button>Donate</button>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <div class="phone">
+       <h2>Start a Fundraiser in three simple steps</h2>  
+       <div class="phne-cnt"> <img src="https://ketto.gumlet.io/assets/images/homepage/sac-separator.png?w=100&dpr=1.5">
+        <div class="omg">
+         <div>
+            <h4>Start your Fundraiser</h4>
+            <p>It’ll take only 2 minutes. Just tell us a few details about you and the ones you are raising funds for.</p>
+         </div>
+         <div>
+            <h4>Share your fundraiser</h4>
+            <p>All you need to do is share the fundraiser with your friends and family. In no time, support will start pouring in.</p>
+         </div>
+         <div>
+            <h4>Withdraw Funds</h4>
+            <p>The funds raised can be withdrawn without any hassle directly to your bank account.</p>
+         </div>
+
+       
+        </div>
+        <video  autoplay loop muted>
+            <source src="https://ketto.herokuapp.com/screen_recording.webm" type="video/webm">
+
+          </video>
+
+        </div> 
+        <div class="shr-btn">
+            <button>START A FUND RAISER FOR FREE</button>
+            <button>TALK TO US</button>
+        </div>
+
+        <div class="lst">
+            <span>Have any questions for us? Chat with our team on Facebook or WhatsApp now.</span>
+            <div class="lst-btn">
+                <button class="wt wt-btn"><i class="fa-brands fa-whatsapp wt"></i>CHAT WITH US</button>
+                <button><i class="fa-brands fa-square-facebook"></i>CHAT WITH US</button>
+            </div>
+           
+        </div>
+      
+    </div>
+    <div class="serv">
+       <h2>Causes you can raise funds for</h2>
+       <p>Be it for a personal need, social cause or a creative idea - you can count on us for
+        the project that you want to raise funds for.</p>
+        <div class="serv-cont">
+           <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96v32V480H384V128 96 56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM96 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H96V96zM416 480h32c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H416V480zM224 208c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H288v48c0 8.8-7.2 16-16 16H240c-8.8 0-16-7.2-16-16V320H176c-8.8 0-16-7.2-16-16V272c0-8.8 7.2-16 16-16h48V208z"/></svg>
+            <h4>MEDICAL</h4>
+            
+           </div>
+           
+           <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M180.7 4.7c6.2-6.2 16.4-6.2 22.6 0l80 80c2.5 2.5 4.1 5.8 4.6 9.3l40.2 322H55.9L96.1 94c.4-3.5 2-6.8 4.6-9.3l80-80zM152 272c-13.3 0-24 10.7-24 24s10.7 24 24 24h80c13.3 0 24-10.7 24-24s-10.7-24-24-24H152zM32 448H352c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
+            <h4>MEMORIAL</h4>
+            
+           </div>
+           <div>
+            <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/child_care/default/48px.svg"></img>
+            <h4>CHILDREN</h4>
+           </div>
+           <div>
+            <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/school/default/48px.svg">
+            <h4>EDUCATION</h4>
+           </div>
+           <div>
+            <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/pets/default/48px.svg">
+            <h4>ANIMAL</h4>
+           </div>
+           <div>
+            <img src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/volunteer_activism/default/48px.svg">
+            <h4>OTHERS</h4>
+           </div>
         </div>
     </div>
     
