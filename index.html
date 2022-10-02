@@ -6,432 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/63b2421d68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <style>
-        .nav-bar{
-            width:100%;
-            height:50px;
-            border:0px solid red;
-            display:flex;
-            justify-content:space-around;
-            font-family: sans-serif;
-            color: #444444;
-            /* padding: 12px; */
-            font-weight: bold;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-        }
-        #nav-bar>img{
-            height:85%;
-            margin-top: -10px;
-        }
-        #prim-menu{
-            width: 80%;
-            border:2px solid green;
-            display: flex;
-            justify-content: space-between;
-        }
-        #prim-menu>div{
-            border: 2px solid yellow;
-            width:50%;
-            display: flex;
-            justify-content: space-around;
-            padding: 5px;
-            
-        }
-        #prim-menu>div+div{
-            width: 40%;
-        }
-        #prim-menu button{
-            background-color:white;
-            border-radius: 5px;
-        }
-       
-        #container{
-            position: relative;
-            display: flex;  
-           flex-wrap: wrap;
-        }
-        #text-block{
-            position:absolute;
-            /* bottom: 250px; */
-           right: 10%;
-           bottom:40%;
-          
-          padding-left: 20px;
-          padding-right: 20px;
-        }
-        #text-block>div{
-           font-size: 20px;
-           font-family:sans-serif;
-           color:#444444;
-           font-weight: bold;
-    
-
-           
-        }
-        #text-block>div+div{
-            display: flex;
-            justify-content: space-around;
-          
-            border: 1px solid orange;
-        }
-        #text-block>div+div>div h3{
-            color: teal;
-        }
-        #text-block>div+div>div{
-            border: 1px solid blueviolet;
-        }
-        #container>img{
-            width: 100%;
-        }
-        .nd{
-            display: flex;
-        }
-        #whts-app{
-            color:green;
-            padding: 4px;
-            width:20%;
-            border:solid green;
-        }
-        h3+span{
-            font-size: smaller;
-        }
-        .platform-fee>span{
-            color: aqua;
-        }
-        #sip{
-            position:absolute;
-            border:0.8px solid #444444;
-            color: blueviolet;
-            width:60%;
-            height:120px;
-            border-radius: 20px;
-            top:95%;
-            left:20%;
-            background-color:white;
-            display:flex;
-            
-        }
-        #sip>div{
-            border:0px solid goldenrod;
-            
-        }
-        #sip-btn{
-            display: flex;
-            justify-content:left;
-            align-items:center;
-            margin-left: 5%;
-            width: 30%;
-            
-        }
-        #sip-btn>button{
-            background-color: #204B6B;
-            color: white;
-            border-radius: 10px;
-            height: 60px;
-            width:90%;
-            border: none;
-            font-weight:bolder;
-            font: 1em sans-serif;
-        }
-        #desc{
-            font-family:sans-serif;
-            width: 70%;
-            font-size: 14px;
-            
-        }
-        #desc h3{
-            font-size: 19px;
-            margin-top: 8%;
-            color: #204B6B;
-        }
-        #desc p{
-            margin-top: -3%;
-            color: #444444;
-        }
-        #sip-img{
-            
-            width: 20%;
-        }
-        #sip-img img{
-            
-      max-height: 100%;
-     
-      
-      border-bottom-right-radius: 10px;
-      border-top-right-radius:10px;
-  
-        }
-        #star{
-            width: 100%;
-            height: 780px;
-            border: 1px solid red;
-            background-color: #fff;
-        }
-        #star h2{
-            text-align: center;
-            margin-top: 10%;
-            font-weight: bolder;
-        }
-        .content{
-            margin:auto;
-            width:90%;
-            height:480px;
-            border: 1px solid red;
-            margin-top: 40px;
-            display: flex;
-            font-family: sans-serif;
-            color: #444444;
-            
-            
-        }
-        .sub-txt{
-            text-align: center;
-            
-           
-        }
-        .content>div{
-            border:1px solid green;
-            width:30%;
-            height:480px;
-            margin: auto;
-            padding: 10px;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border-radius: 10px;
-            
-        }
-       .publish img{
-        width:20%;
-        clip-path: circle();
-       }
-       .publish{
-        display:flex;
-        margin-bottom: 10px;
-       }
-       .mny{
-        color: black;
-        font-weight: bolder;
-        
-    
-       }
-       .progress-bar{
-        width: 10%;
-        background-color: turquoise;
-
-       }
-       .icn{
-        display: flex;
-        justify-content: space-between;
-       }
-       .fa-heart{
-        color: red;
-       }
-       .fund-btn{
-        display: flex;
-        justify-content: space-between;
-       }
-       .fund-btn button{
-        width: 40%;
-        margin: none;
-        border-radius: 10px;
-       }
-       .fa-square-facebook{
-        color: navy;
-       }
-       .fbb{
-       
-        border: 1px solid blue;
-        font-family: sans-serif;
-        color: navy;
-        font-weight: bolder;
-       }
-       .fbb+button{
-        background-color:turquoise;
-        color: #fff;
-        font-family: sans-serif;
-        font-weight:bolder;
-        border:none;
-       }
-
-       .phone{
-        width:80%;
-        height:650px;
-        border:1px solid indigo;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        
-        margin: auto;
-        
-        
-       
-       }
-       .phone h2{
-        text-align: center;
-        font-weight: bolder;
-       }
-       .phone>div>img{
-       height: 350px;
-       }
-       .phne-cnt{
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        height:480px;
-        border:1px solid red;
-        margin: auto;
-       }
-       video{
-        height:450px;
-       }
-       .omg{
-        height: 450px;
-        width:30%;
-        border:1px solid orange;
-        
-       }
-       .omg>div{
-        width:100%;
-        height:35%;
-        border:1px solid green;
-        
-       }
-       .omg h4{
-        color: teal;
-        font-weight: bolder;
-       }
-       .shr-btn{
-        border:1px solid yellowgreen;
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-        text-align: center;
-        margin-left: 30%;
-        margin-bottom: 20px;
-       }
-       .shr-btn>button{
-        background-color:turquoise;
-        color: #fff;
-        border-radius: 8px;
-        border:none;
-        height:50px;
-        padding: 5px;
-       }
-       .shr-btn>button+button{
-        width:50%;
-        color: turquoise;
-        background-color: #fff;
-        border: 2px solid turquoise;
-       }
-       .lst{
-        text-align: center;
-       }
-       .lst-btn{
-        display: inline;
-        
-       }
-       .wt{
-        background-color: green;
-        color: #fff;
-       }
-       .wt-btn{
-        border:1px solid white;
-        border-radius: 10px;
-        width: 14%;
-       }
-      
-       .wt-btn+button{
-        background-color: #fff;
-        border-radius: 10px;
-       }
-       
-       .serv{
-        height:450px;
-        width:100%;
-        border:1px solid black;
-        margin-top:80px;
-        text-align: center;
-        font-weight: bolder;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-       }
-       .serv h4{
-        font-weight: bolder;
-       }
-       .serv p{
-        width: 40%;
-        margin-left: 30%;
-        font-weight: lighter;
-        margin-bottom: 40px;
-       }
-       .serv-cont{
-        border:1px solid royalblue;
-        width:100%;
-        height:250px;
-        display: flex;
-       }
-       .serv-cont>div{
-         width:16%;
-         height:50%;
-         border:2px solid turquoise;
-         padding: 10px;
-         margin: auto;
-         background-color: turquoise;
-       }
-       .serv-cont svg {
-        height:60%;
-       }
-       .serv-cont img {
-        height:60%;
-       }
-       .footer{
-       background-color: #063c3b;
-        height:380px;
-        padding: 20px;
-        color: #fff;
-       }
-       .foot-up{
-        
-        height:25%;
-        background-color: turquoise;
-        padding:10px;
-        display: flex;
-        justify-content:space-between;
-        color: #fff;
-       }
-       .foot-up>div{
-        height:40%;
-       }
-       .foot-up svg{
-        height: 100%;
-       }
-
-       .line{
-width: 100%;
-height: 47px;
-border-bottom: 1px solid white;
-/* position: absolute; */
-}
-#ketto-img{
-    height:25%;
-}
-.foot-cont{
-    color: #fff;
-    margin-bottom: 8px;;
-}
-.foot-cont>span{
-    padding: 5px;
-}
-.cpyrght{
-    text-align: center;
-}
-    </style>
+    <link rel="stylesheet" href="./style/index.css" />
     <title>Document</title>
 </head>
 <body>
     <div class="nav-bar">
-        <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.5">
+        <img href="./index.html" src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.5">
         <div id="prim-menu">
             <div>
-                <a>Browse FundRaisers</a>
+                <a style=" background-color:yellow" href="./fundraisers.html">Browse FundRaisers</a>
                 <a>Fundraise For</a>
                 <a>How It Works</a>
                 <a>Search <i class="fa-solid fa-magnifying-glass"></i></a>
@@ -440,7 +23,7 @@ border-bottom: 1px solid white;
             <div>
                 <button id="whts-app"> <i class="fa-brands fa-whatsapp"></i>Chat</button>
                 <button id="strt-btn">Start a Fundraiser</button>
-                <a>Sign In</a>
+                <a style=" background-color:yellow" href="./sigin.html">Sign In</a>
             </div>
 
         </div>
@@ -494,8 +77,8 @@ border-bottom: 1px solid white;
     <div id="star">
         <h2>Trending Fundraisers</h2>
         <div class="sub-txt">View the fundraisers that are most active right now</div>
-        <div class="content">
-            <div>
+        <div class="content " class="carousel-main",data-flickity='{ "wrapAround": "true", "autoplay": true , "imagesLoaded":true }'>
+            <div class="carousel-cell">
                 <img src="https://kettocdn.gumlet.io/media/campaign/212000/212655/image/wid1f1a33100b0ce11487774ca00c4341f7d0364e69.jpg?w=320&dpr=1.5">
                 <h3>My Little Boy’s Cancer Has Relapsed Twice But I’m Helpless. Please Save..</h3>
                 <div class="publish">
@@ -519,7 +102,7 @@ border-bottom: 1px solid white;
                   </div>
                  
             </div>
-            <div>
+            <div  class="carousel-cell">
                 <img src="https://kettocdn.gumlet.io/media/campaign/281000/281759/image/wid60211afcc8a19.png?w=320&dpr=1.5">
                 <h3>Offer A Helping Hand To Support  Rubina Rodgers'  Treatment..</h3>
                 <div class="publish">
@@ -543,7 +126,7 @@ border-bottom: 1px solid white;
                 </div>
                     
             </div>
-            <div>
+            <div  class="carousel-cell">
                 <img src="https://kettocdn.gumlet.io/media/campaign/686000/686992/image/wid6315de97732b3.jpg?w=320&dpr=1.5">
                 <h3>My Young 30 Year Old Husband Is In Urgent Need Of Heart Transplant..</h3>
                 <div class="publish">
@@ -688,6 +271,9 @@ border-bottom: 1px solid white;
 
      
     </div>
-    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </body>
+
 </html>
