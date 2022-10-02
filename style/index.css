@@ -1,0 +1,427 @@
+
+.nav-bar{
+    width:100%;
+    height:50px;
+    border:0px solid red;
+    display:flex;
+    justify-content:space-around;
+    font-family: sans-serif;
+    color: #444444;
+    /* padding: 12px; */
+    font-weight: bold;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+#nav-bar>img{
+    height:85%;
+    margin-top: -10px;
+}
+#prim-menu{
+    width: 80%;
+    border:0px solid green;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#prim-menu>div{
+    border: 0px solid yellow;
+    width:50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    
+}
+#prim-menu>div+div{
+    width: 40%;
+}
+#prim-menu button{
+    background-color:white;
+    border-radius: 5px;
+}
+
+#container{
+    position: relative;
+    display: flex;  
+   flex-wrap: wrap;
+}
+#text-block{
+    position:absolute;
+    /* bottom: 250px; */
+   right: 10%;
+   bottom:40%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#text-block>div{
+   font-size: 20px;
+   font-family:sans-serif;
+   color:#444444;
+   font-weight: bold;
+
+
+   
+}
+#text-block>div+div{
+    display: flex;
+    justify-content: space-around;
+  
+    border: 0px solid orange;
+}
+#text-block>div+div>div h3{
+    color: teal;
+}
+#text-block>div+div>div{
+    border: 0px solid blueviolet;
+}
+#container>img{
+    width: 100%;
+}
+.nd{
+    display: flex;
+}
+#whts-app{
+    color:green;
+    padding: 4px;
+    width:20%;
+    border:solid green;
+}
+h3+span{
+    font-size: smaller;
+}
+.platform-fee>span{
+    color: aqua;
+}
+#sip{
+    position:absolute;
+    border:0.8px solid #444444;
+    color: blueviolet;
+    width:60%;
+    height:120px;
+    border-radius: 20px;
+    top:95%;
+    left:20%;
+    background-color:white;
+    display:flex;
+    
+}
+#sip>div{
+    border:0px solid goldenrod;
+    
+}
+#sip-btn{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-left: 5%;
+    width: 30%;
+    
+}
+#sip-btn>button{
+    background-color: #204B6B;
+    color: white;
+    border-radius: 10px;
+    height: 60px;
+    width:90%;
+    border: none;
+    font-weight:bolder;
+    font: 1em sans-serif;
+}
+#desc{
+    font-family:sans-serif;
+    width: 70%;
+    font-size: 14px;
+    
+}
+#desc h3{
+    font-size: 19px;
+    margin-top: 8%;
+    color: #204B6B;
+}
+#desc p{
+    margin-top: -3%;
+    color: #444444;
+}
+#sip-img{
+    
+    width: 20%;
+}
+#sip-img img{
+    
+max-height: 100%;
+
+
+border-bottom-right-radius: 10px;
+border-top-right-radius:10px;
+
+}
+#star{
+    width: 100%;
+    height: 780px;
+    border: 0px solid red;
+    background-color: #fff;
+}
+#star h2{
+    text-align: center;
+    margin-top: 10%;
+    font-weight: bolder;
+}
+.content{
+    margin:auto;
+    width:90%;
+    height:480px;
+    border: 0px solid red;
+    margin-top: 40px;
+    display: flex;
+    font-family: sans-serif;
+    color: #444444;
+    
+    
+}
+.sub-txt{
+    text-align: center;
+    
+   
+}
+.content>div{
+    border:0px solid green;
+    width:30%;
+    height:480px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    
+}
+.publish img{
+width:20%;
+clip-path: circle();
+}
+.publish{
+display:flex;
+margin-bottom: 10px;
+}
+.mny{
+color: black;
+font-weight: bolder;
+
+
+}
+.progress-bar{
+width: 10%;
+background-color: turquoise;
+
+}
+.icn{
+display: flex;
+justify-content: space-between;
+}
+.fa-heart{
+color: red;
+}
+.fund-btn{
+display: flex;
+justify-content: space-between;
+}
+.fund-btn button{
+width: 40%;
+margin: none;
+border-radius: 10px;
+}
+.fa-square-facebook{
+color: navy;
+}
+.fbb{
+
+border: 1px solid blue;
+font-family: sans-serif;
+color: navy;
+font-weight: bolder;
+}
+.fbb+button{
+background-color:turquoise;
+color: #fff;
+font-family: sans-serif;
+font-weight:bolder;
+border:none;
+}
+
+.phone{
+width:80%;
+height:650px;
+border:0px solid indigo;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+margin: auto;
+
+
+
+}
+.phone h2{
+text-align: center;
+font-weight: bolder;
+}
+.phone>div>img{
+height: 350px;
+}
+.phne-cnt{
+display: flex;
+justify-content: space-around;
+width: 70%;
+height:480px;
+border:0px solid red;
+margin: auto;
+}
+video{
+height:450px;
+}
+.omg{
+height: 450px;
+width:30%;
+border:0px solid orange;
+
+}
+.omg>div{
+width:100%;
+height:35%;
+border:0px solid green;
+
+}
+.omg h4{
+color: teal;
+font-weight: bolder;
+}
+.shr-btn{
+border:0px solid yellowgreen;
+display: flex;
+justify-content: space-around;
+width: 50%;
+text-align: center;
+margin-left: 30%;
+margin-bottom: 20px;
+}
+.shr-btn>button{
+background-color:turquoise;
+color: #fff;
+border-radius: 8px;
+border:none;
+height:50px;
+padding: 5px;
+}
+.shr-btn>button+button{
+width:50%;
+color: turquoise;
+background-color: #fff;
+border: 2px solid turquoise;
+}
+.lst{
+text-align: center;
+}
+.lst-btn{
+display: inline;
+
+}
+.wt{
+background-color: green;
+color: #fff;
+}
+.wt-btn{
+border:1px solid white;
+border-radius: 10px;
+width: 14%;
+}
+
+.wt-btn+button{
+background-color: #fff;
+border-radius: 10px;
+}
+
+.serv{
+height:450px;
+width:100%;
+border:0px solid black;
+margin-top:80px;
+text-align: center;
+font-weight: bolder;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.serv h4{
+font-weight: bolder;
+}
+.serv p{
+width: 40%;
+margin-left: 30%;
+font-weight: lighter;
+margin-bottom: 40px;
+}
+.serv-cont{
+border:0px solid royalblue;
+width:100%;
+height:250px;
+display: flex;
+}
+.serv-cont>div{
+ width:16%;
+ height:50%;
+ border:2px solid turquoise;
+ padding: 10px;
+ margin: auto;
+ background-color: turquoise;
+}
+.serv-cont svg {
+height:60%;
+}
+.serv-cont img {
+height:60%;
+}
+.footer{
+background-color: #063c3b;
+height:380px;
+padding: 20px;
+color: #fff;
+}
+.foot-up{
+
+height:25%;
+background-color: turquoise;
+padding:10px;
+display: flex;
+justify-content:space-between;
+color: #fff;
+}
+.foot-up>div{
+height:40%;
+}
+.foot-up svg{
+height: 100%;
+}
+
+.line{
+width: 100%;
+height: 47px;
+border-bottom: 1px solid white;
+/* position: absolute; */
+}
+#ketto-img{
+height:25%;
+}
+.foot-cont{
+color: #fff;
+margin-bottom: 8px;;
+}
+.foot-cont>span{
+padding: 5px;
+}
+.cpyrght{
+text-align: center;
+}
+
+
+.carousel-cell {
+width: 100%;
+}
+/* cell number */
+.carousel-cell:before {
+display: block;
+}

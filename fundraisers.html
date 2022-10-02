@@ -5,120 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/63b2421d68.js" crossorigin="anonymous"></script>
-    <style>
-         .nav-bar{
-            width:100%;
-            height:50px;
-            border:0px solid red;
-            display:flex;
-            justify-content:space-around;
-            font-family: sans-serif;
-            color: #444444;
-            /* padding: 12px; */
-            font-weight: bold;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-        }
-        #nav-bar>img{
-            height:80%;
-            margin-top: -10px;
-            
-        }
-        #prim-menu{
-            width: 80%;
-            border:0px solid green;
-            display: flex;
-            justify-content: space-between;
-        }
-        #prim-menu>div{
-            border: 0px solid yellow;
-            width:50%;
-            display: flex;
-            justify-content: space-around;
-            padding: 5px;
-            
-        }
-        #prim-menu>div+div{
-            width: 40%;
-        }
-        #prim-menu button{
-            background-color:white;
-            border-radius: 5px;
-        }
-        .banner>img{
-            height:400px;
-            width:97%;
-            padding: 10px;
-            position: relative;
-        }
-        .banner-cont{
-            position: absolute;
-            left: 25%;
-            top:25%;
-            color: aliceblue;
-            font-family: sans-serif;
-
-          
-        }
-        
-        .banner-cont p{
-            font-size: x-large;
-            width:50%;
-        }
-        .banner-cont button{
-            background-color: white;
-            color:#4c829c;
-            width:15%;
-            height:35px;
-            font-size:small;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
-        }
-        .menu{
-            height:250px;
-            border:0px solid red;
-            width:15%;
-            text-align: center;
-            margin-left: 2%;
-            border-radius: 10px;
-            background-color: rgb(247, 247, 247);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 5px;
-            
-        }
-        .menu h4{
-        color:turquoise;
-        }
-        .line{
-        width: 100%;
-        height: 1px;
-        border-bottom: 1px solid darkgray;
-/* position: absolute; */
-}
-       .ctgry{
-        padding: 10px;
-       }
-       .menu button{
-        margin-top: 10px;
-        color: aliceblue;
-        background-color: turquoise;
-        border-radius: 10px;
-        height:40px;
-        font-weight: bold;
-        border:none;
-       }
-       
-        body {
-          margin: 0;
-          padding: 0;
-}
-    </style>
+    <link rel="stylesheet" href="./style/fundraisers.css" />
+    
     <title>Fundraiser</title>
 </head>
 <body>
     <div class="nav-bar">
-        <img src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.5">
+        <img  href="./index.html" src="https://ketto.gumlet.io/assets/images/logo-light-bg.svg?w=100&dpr=1.5">
         <div id="prim-menu">
             <div>
                 <a>Browse FundRaisers</a>
@@ -130,7 +23,7 @@
             <div>
                 <button id="whts-app"> <i class="fa-brands fa-whatsapp"></i>Chat</button>
                 <button id="strt-btn">Start a Fundraiser</button>
-                <a>Sign In</a>
+                <a style=" background-color:yellow" href="./sigin.html">Sign In</a>
             </div>
 
         </div>
@@ -144,7 +37,17 @@
             <p>Join monthly donors with Social Impact Plan and start saving needy children every month</p>
             <button>Start Giving Monthly</button>
         </div>
-    </div>
+        
+        <select id="filter">
+            <option value="">Select Category</option>
+            <option value="med">Medical</option>
+            <option value="ed">Education</option>
+            <option value="en">Environment</option>
+            <option value="an">Animals</option>
+
+          </select>
+  <div class="box">     
+    
       <div class="menu">
         <h4>CATEGORIES</h4>
         <div class="line"></div>
@@ -154,7 +57,19 @@
         <div class="ctgry">Environment</div>
         <div class="line"></div>
         <button>Start a Fundraiser</button>
+        </div>
         
-      </div>
+
+        <div id="container">
+
+        </div>
+    </div>   
+
+    
+
+  
+      
 </body>
+<script src="./Scripts/fundraisers.js"></script>
 </html>
+
